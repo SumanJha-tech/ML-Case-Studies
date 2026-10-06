@@ -1,20 +1,49 @@
-# Age-Gender_Detector
-Simple age and gender detector using Machine learning
+# 👤 Gender and Age Detector: Real-Time Application
 
-## To simply run this model:
-1.Clone this repository.
-2.Run the [gui.py](https://github.com/SumanJha12345/Gender-and-Age-Detector-Real-Time-Application.git) file.
-3.Upload the Image yoy want to detect.
-4.Click on detect button.
-5.View results.
+Detects a face from a live camera feed and predicts gender and age range in real time.
 
-## To Run this Model yourself:
-1.Clone this repository.
-2.Download the dataset from [here](https://www.kaggle.com/datasets/jangedoo/utkface-new).
-3.Extract the dataset to your resporitory folder.
-4.Open the [Model jupyter notebook](https://github.com/SumanJha12345/Gender-and-Age-Detector-Real-Time-Application.git).
-5.Run this notebook.
-6. Run the [GUI.py](https://github.com/SumanJha12345/Gender-and-Age-Detector-Real-Time-Application.git) file.
-7.Upload the Image you want to detect.
-8.Click on detect button.
-9.View results.
+## Problem
+
+Estimate gender and age group from a face in a video stream, fast enough to run live on a normal laptop.
+
+## How it works
+
+1. **Capture** frames from the webcam.
+2. **Detect faces** in each frame. [FILL: e.g. OpenCV DNN face detector]
+3. **Classify** each face crop for gender and age bucket. [FILL: model names / files]
+4. **Draw** the label on the frame and display it live.
+
+## Models
+
+| Task | Model | Output |
+|---|---|---|
+| Face detection | [FILL] | Bounding box |
+| Gender | [FILL] | Male / Female |
+| Age | [FILL] | Age range, e.g. (25–32) |
+
+## Demo
+
+[FILL: add a GIF or screenshot, e.g. `![Demo](demo.gif)`]
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+python [FILL: main script name].py
+```
+
+Press `q` to quit the camera window.
+
+## Limitations
+
+- Age is predicted as a range, not an exact number.
+- Accuracy drops in poor lighting, with occlusion, or at extreme angles.
+- Predictions are statistical estimates. They should not be used for decisions about people.
+
+## Tech stack
+
+`Python` `OpenCV` `Deep Learning (pre-trained models)`
+
+## Author
+
+[Suman Jha](https://github.com/SumanJha-tech) · ✉️ sumanjha0906@gmail.com · [LinkedIn](https://linkedin.com/in/sumanjha-tech)
